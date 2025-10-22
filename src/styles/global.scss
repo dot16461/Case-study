@@ -1,0 +1,65 @@
+:root {
+  color-scheme: light;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+[dir="rtl"] {
+  .MuiTextField-root .MuiInputBase-input {
+    text-align: right;
+  }
+  
+  .MuiTextField-root .MuiInputLabel-root {
+    left: auto;
+    right: 0;
+    transform-origin: top right;
+  }
+  
+  .MuiTextField-root .MuiInputLabel-shrink {
+    transform: translate(-14px, -9px) scale(0.75);
+  }
+  
+  .MuiFormHelperText-root {
+    text-align: right;
+  }
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 1000;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.skip-link:focus {
+  top: 6px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 600px) {
+  .MuiContainer-root {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .MuiFormControl-root, .MuiTextField-root {
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+  }
+}
+
+

@@ -1,0 +1,95 @@
+{
+  "appTitle": "طلب الدعم الاجتماعي",
+  "next": "التالي",
+  "back": "السابق",
+  "submit": "إرسال",
+  "submitted": "تم إرسال الطلب بنجاح",
+  "backToForm": "العودة إلى النموذج",
+  "language": "اللغة",
+  "english": "الإنجليزية",
+  "arabic": "العربية",
+  "helpMeWrite": "ساعدني بالكتابة",
+  "aiSuggestionTitle": "اقتراح الذكاء الاصطناعي",
+  "discard": "تجاهل",
+  "accept": "اعتماد",
+  "enterPrompt": "أدخل الطلب النصي",
+  "fields": {
+    "name": "الاسم",
+    "nationalId": "الهوية الوطنية",
+    "dateOfBirth": "تاريخ الميلاد",
+    "gender": "الجنس",
+    "address": "العنوان",
+    "city": "المدينة",
+    "state": "الولاية",
+    "country": "الدولة",
+    "phone": "الهاتف",
+    "email": "البريد الإلكتروني",
+    "maritalStatus": "الحالة الاجتماعية",
+    "dependents": "المعالون",
+    "employmentStatus": "حالة العمل",
+    "monthlyIncome": "الدخل الشهري",
+    "housingStatus": "حالة السكن",
+    "currentFinancialSituation": "الوضع المالي الحالي",
+    "employmentCircumstances": "ظروف العمل",
+    "reasonForApplying": "سبب التقديم"
+  },
+  "options": {
+    "marital": {
+      "single": "أعزب",
+      "married": "متزوج",
+      "divorced": "مطلق",
+      "widowed": "أرمل"
+    },
+    "employment": {
+      "employed": "على رأس العمل",
+      "unemployed": "عاطل",
+      "student": "طالب",
+      "retired": "متقاعد"
+    },
+    "housing": {
+      "rent": "إيجار",
+      "own": "ملك",
+      "family": "مع العائلة",
+      "other": "أخرى"
+    }
+  },
+  "prompts": {
+    "currentFinancial": "ساعدني في وصف وضعي المالي الحالي لطلب دعم اجتماعي.",
+    "employment": "ساعدني في وصف ظروف عملي.",
+    "reason": "ساعدني في وصف سبب التقديم للمساعدة."
+  },
+  "steps": {
+    "personalInfo": "المعلومات الشخصية",
+    "familyFinancial": "الأسرة والمالية",
+    "situation": "وصف الحالة"
+  },
+  "step": "الخطوة {{n}}",
+  "current": "الحالي",
+  "applicationForm": "نموذج الطلب",
+  "redirectingMessage": "سيتم إعادة التوجيه إلى الصفحة الرئيسية خلال 3 ثوانٍ...",
+  "submittedSuccessfully": "تم إرسال الطلب بنجاح!",
+  "submissionFailed": "فشل في إرسال الطلب. يرجى المحاولة مرة أخرى.",
+  "unexpectedError": "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى.",
+  "loading": "جاري التحميل",
+  "generating": "جاري إنشاء المحتوى",
+  "submitting": "جاري إرسال الطلب",
+  "progress": "التقدم",
+  "submission": "الإرسال",
+  "form": "النموذج",
+  "navigation": "التنقل",
+  "errors": {
+    "required": "هذا الحقل مطلوب",
+    "minLength": "يجب أن يحتوي على {{min}} أحرف على الأقل",
+    "maxLength": "يجب أن يحتوي على {{max}} أحرف كحد أقصى",
+    "email": "يرجى إدخال عنوان بريد إلكتروني صحيح",
+    "phone": "يرجى إدخال رقم هاتف صحيح",
+    "date": "يرجى إدخال تاريخ صحيح",
+    "number": "يرجى إدخال رقم صحيح"
+  },
+  "reviewApplication": "مراجعة الطلب",
+  "personalInformation": "المعلومات الشخصية",
+  "familyFinancialInfo": "المعلومات الأسرية والمالية",
+  "situationDescriptions": "وصف الحالة",
+  "submitApplication": "إرسال الطلب",
+  "noDescription": "لم يتم تقديم وصف"
+}

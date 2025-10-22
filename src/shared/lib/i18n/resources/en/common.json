@@ -1,0 +1,95 @@
+{
+  "appTitle": "Social Support Application",
+  "next": "Next",
+  "back": "Back",
+  "submit": "Submit",
+  "submitted": "Application submitted successfully",
+  "backToForm": "Back to form",
+  "language": "Language",
+  "english": "English",
+  "arabic": "Arabic",
+  "helpMeWrite": "Help Me Write",
+  "aiSuggestionTitle": "AI Suggestion",
+  "discard": "Discard",
+  "accept": "Accept",
+  "enterPrompt": "Enter your prompt",
+  "fields": {
+    "name": "Name",
+    "nationalId": "National ID",
+    "dateOfBirth": "Date of Birth",
+    "gender": "Gender",
+    "address": "Address",
+    "city": "City",
+    "state": "State",
+    "country": "Country",
+    "phone": "Phone",
+    "email": "Email",
+    "maritalStatus": "Marital Status",
+    "dependents": "Dependents",
+    "employmentStatus": "Employment Status",
+    "monthlyIncome": "Monthly Income",
+    "housingStatus": "Housing Status",
+    "currentFinancialSituation": "Current Financial Situation",
+    "employmentCircumstances": "Employment Circumstances",
+    "reasonForApplying": "Reason for Applying"
+  },
+  "options": {
+    "marital": {
+      "single": "Single",
+      "married": "Married",
+      "divorced": "Divorced",
+      "widowed": "Widowed"
+    },
+    "employment": {
+      "employed": "Employed",
+      "unemployed": "Unemployed",
+      "student": "Student",
+      "retired": "Retired"
+    },
+    "housing": {
+      "rent": "Rent",
+      "own": "Own",
+      "family": "With Family",
+      "other": "Other"
+    }
+  },
+  "prompts": {
+    "currentFinancial": "Help me describe my current financial situation for a social support application.",
+    "employment": "Help me describe my employment circumstances.",
+    "reason": "Help me describe the reason for applying for assistance."
+  },
+  "steps": {
+    "personalInfo": "Personal Information",
+    "familyFinancial": "Family & Financial Info",
+    "situation": "Situation Descriptions"
+  },
+  "step": "Step {{n}}",
+  "current": "Current",
+  "applicationForm": "Application Form",
+  "redirectingMessage": "Redirecting to home page in 3 seconds...",
+  "submittedSuccessfully": "Application submitted successfully!",
+  "submissionFailed": "Failed to submit application. Please try again.",
+  "unexpectedError": "An unexpected error occurred. Please try again.",
+  "loading": "Loading",
+  "generating": "Generating content",
+  "submitting": "Submitting application",
+  "progress": "Progress",
+  "submission": "Submission",
+  "form": "Form",
+  "navigation": "Navigation",
+  "errors": {
+    "required": "This field is required",
+    "minLength": "Must contain at least {{min}} characters",
+    "maxLength": "Must contain no more than {{max}} characters",
+    "email": "Please enter a valid email address",
+    "phone": "Please enter a valid phone number",
+    "date": "Please enter a valid date",
+    "number": "Please enter a valid number"
+  },
+  "reviewApplication": "Review Application",
+  "personalInformation": "Personal Information",
+  "familyFinancialInfo": "Family & Financial Information",
+  "situationDescriptions": "Situation Descriptions",
+  "submitApplication": "Submit Application",
+  "noDescription": "No description provided"
+}
