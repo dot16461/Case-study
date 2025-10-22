@@ -1,6 +1,4 @@
 import { z } from 'zod'
-
-import { z } from 'zod'
 import { PersonalInfo, FamilyFinancialInfo, SituationDescriptions } from '@entities/application/model/application.types'
 
 export const createPersonalInfoSchema = (t: (key: string, options?: any) => string): z.ZodType<PersonalInfo> => z.object({
