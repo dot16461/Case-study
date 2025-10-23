@@ -1,4 +1,4 @@
-import { Grid } from '@mui/material'
+import { Grid2 as Grid } from '@mui/material'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { createFamilyFinancialSchema } from '../../lib/validationSchemas'
@@ -45,19 +45,19 @@ export function Step2FamilyFinancial({ defaultValues, onValid }: Props) {
   return (
     <form onSubmit={handleSubmit(onValid)}>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <FormSelect control={control} name="maritalStatus" label={t('fields.maritalStatus')} options={maritalOptions.map(o=>({value:o.value,label:t(o.label)}))} />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <FormTextField control={control} name="dependents" label={t('fields.dependents')} type="number" />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <FormSelect control={control} name="employmentStatus" label={t('fields.employmentStatus')} options={employmentOptions.map(o=>({value:o.value,label:t(o.label)}))} />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <FormTextField control={control} name="monthlyIncome" label={t('fields.monthlyIncome')} type="number" />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <FormSelect control={control} name="housingStatus" label={t('fields.housingStatus')} options={housingOptions.map(o=>({value:o.value,label:t(o.label)}))} />
         </Grid>
       </Grid>

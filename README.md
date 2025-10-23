@@ -20,6 +20,8 @@ Create a `.env` file in the root directory:
 
 ```env
 VITE_PUBLIC_API_KEY=your_openai_api_key_here
+VITE_PUBLIC_API_URL=https://api.openai.com/v1/chat/completions
+VITE_PUBLIC_API_MODEL=gpt-3.5-turbo
 ```
 
 ### Run Application
@@ -38,6 +40,8 @@ The application will be available at `http://localhost:5173`
 2. Add to `.env` file:
 ```env
 VITE_PUBLIC_API_KEY=sk-your-openai-api-key
+VITE_PUBLIC_API_URL=https://api.openai.com/v1/chat/completions
+VITE_PUBLIC_API_MODEL=gpt-3.5-turbo
 ```
 
 ### Option 2: Current Implementation (Z.AI API)

@@ -3,21 +3,28 @@ export type AiSuggestionParams = {
   context?: string;
 };
 
-async function callZAPI(
-  messages: Array<{ role: string; content: string }>,
-  model = "glm-4.6"
-) {
+async function callZAPI(messages: Array<{ role: string; content: string }>) {
   const AI_API_KEY = import.meta.env.VITE_PUBLIC_API_KEY;
+  const API_URL = import.meta.env.VITE_PUBLIC_API_URL;
+  const API_MODEL = import.meta.env.VITE_PUBLIC_API_MODEL;
 
   if (!AI_API_KEY) {
     throw new Error(
       "API key is not configured. Please set VITE_PUBLIC_API_KEY in your .env file."
     );
   }
+  if (!API_URL) {
+    throw new Error(
+      "API URL is not configured. Please set VITE_PUBLIC_API_URL in your .env file."
+    );
+  }
+  if (!API_MODEL) {
+    throw new Error(
+      "API model is not configured. Please set VITE_PUBLIC_API_MODEL in your .env file."
+    );
+  }
 
-  const url = "https://api.z.ai/api/paas/v4/chat/completions";
-
-  const response = await fetch(url, {
+  const response = await fetch(API_URL, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${AI_API_KEY}`,
@@ -25,7 +32,7 @@ async function callZAPI(
       "Accept-Language": "en-US,en,ar",
     },
     body: JSON.stringify({
-      model: model,
+      model: API_MODEL,
       messages: messages,
       temperature: 1.0,
     }),
@@ -55,7 +62,7 @@ export async function generateSuggestion(
   ];
 
   try {
-    const result = await callZAPI(messages, "glm-4.6");
+    const result = await callZAPI(messages);
     const message = result?.choices?.[0]?.message;
     const content: string | undefined = message?.content;
     const reasoningContent: string | undefined = message?.reasoning_content;
